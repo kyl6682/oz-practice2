@@ -7,7 +7,7 @@ on :
 
 jobs : 
   deploy : 
-    runs on : ubuntu-latest
+    runs-on : ubuntu-latest
     steps :
       - name : Github Repository 파일 불러오기
         uses : actions/checkout@v4
@@ -31,4 +31,4 @@ jobs :
           aws s3 cp ./dist s3://prod-oz-practice/ --recursive
     
       - name : Cloudfront 캐시 무효화
-        run : aws cloudfront crete-invalidation --distribution-id E3HSSVBNRUUX5X --paths "/*"
+        run : aws cloudfront create-invalidation --distribution-id E3HSSVBNRUUX5X --paths "/*"
