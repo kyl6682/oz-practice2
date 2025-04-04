@@ -31,4 +31,4 @@ jobs :
           aws s3 cp ./dist s3://dev-oz-practice/ --recursive
     
       - name : Cloudfront 캐시 무효화
-        run : aws cloudfront crete-invalidation --distribution-id E1HNX5G99IJ86P --paths "/*"
+        run : aws cloudfront create-invalidation --distribution-id E1HNX5G99IJ86P --paths "/*"
