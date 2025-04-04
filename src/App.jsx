@@ -19,7 +19,7 @@ function App() {
       <h1>Vite + React</h1>
       <div>
         <div>
-          <h2>Login feature</h2>
+          <h3>Login feature</h3>
           <label>아이디</label>
           <input />
           <label>비밀번호</label>
